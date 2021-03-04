@@ -5,7 +5,7 @@
 
   <!-- Copyright -->
   
-    <a class="text-white" href="https://mdbootstrap.com/">Teléfonos: (55) 50-44-70-20, 50-44-41-31, 58-53-72-93, 58-52-74-26 E-mail: webmaster@teschi.edu.mx</a>
+    <a class="text-white" href="https://mdbootstrap.com/">Telefonos   aqui</a>
 
   <!-- Copyright -->
 </footer>
