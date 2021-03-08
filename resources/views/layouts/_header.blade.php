@@ -20,8 +20,8 @@
 </header>
 <section class="section">
     TECNOLÓGICO DE ESTUDIOS SUPERIORES DE CHIMALHUACÁN
-    <img class="logo" src="imagen/teschi logo.png" alt="imagen 1">
-    <img class="tec" src="imagen/tecnm.png" alt="imagen 2">
+    <img class="logo" src="{{asset('imagen/teschi_logo.png')}}" alt="imagen 1">
+    <img class="tec" src="{{asset('imagen/tecnm.png')}}" alt="imagen 2">
 
 </section>
 
