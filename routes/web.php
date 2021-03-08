@@ -3,7 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LibrosController;
 use App\Http\Controllers\RegistroController;
-use App\Models\ListasLibro;
+use App\Http\Controllers\AdministradorController;
 use Illuminate\Support\Facades\Route;
 
 /*
