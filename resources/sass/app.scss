@@ -3,7 +3,10 @@
 
 // Variables
 @import "variables";
-@import "elementos";
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
+//General
+@import "elementos";
+@import "colours";
+@import 'botones';
+@import 'footer';
+@import 'header';
