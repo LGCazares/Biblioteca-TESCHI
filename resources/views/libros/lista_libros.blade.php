@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="container">
     <div class="table-responsive mb-5">
         <table class="table" id="libros_table">
