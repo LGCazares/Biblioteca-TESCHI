@@ -14,6 +14,16 @@
                 <a style="color: black" href="#" >Cerrar sesion</a>
             </li>
             @endguest
+            
         </div>
     </nav>
 </header>
+<section class="section">
+    TECNOLÓGICO DE ESTUDIOS SUPERIORES DE CHIMALHUACÁN
+    <img class="logo" src="imagen/teschi logo.png" alt="imagen 1">
+    <img class="tec" src="imagen/tecnm.png" alt="imagen 2">
+
+</section>
+
+
+<section class="sistema"> Sistema de Biblioteca Escolar </section>

@@ -25,5 +25,7 @@ Route::post('guarda/registro', [RegistroController::class, 'storeRegistro'])->na
 
 //Lista de Libros
 Route::get('lista/libros', [LibrosController::class, 'showLibros'])->name('lista.libros');
+Route::get('nuevo/alumno', [AdministradorController::class, 'storeAlumno'])->name('store.alumno');
+Route::post('nuevo_alumno', [AdministradorController::class, 'createAlumno'])->name('create.alumno');
 
 
