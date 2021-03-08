@@ -1,5 +1,5 @@
 <header>
-    <nav style="background-color:#91C470; color:aliceblue;" class="navbar navbar-expand-lg navbar-light ">
+    <nav style="background:linear-gradient(30deg,rgb(0, 0, 0), rgb(13, 80, 35),rgb(53, 114, 91), rgb(12, 165, 81), rgb(152, 240, 160), rgb(179, 253, 219))" class="navbar navbar-expand-lg navbar-light ">
         <a href="{{route('/')}}" style="color: white;" class="navbar-brand">INICIO</a>
         <div>
             @auth
