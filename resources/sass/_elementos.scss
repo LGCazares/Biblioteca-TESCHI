@@ -1,40 +1,161 @@
 .div_verde {
-    border-radius: 20px;
-    background-color: #91C470;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    h3 {
-      font-size: 30px;
-    }
-  }
-  .logo {
-     
-    margin: 10px; 
-    float: left; 
-    width: 200px; 
-    height: 100px;
-    box-shadow: 7px 13px 37px #157029 ;
+  border-radius: 20px;
+  background-color: #91C470;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
-.tec {
-       
-       margin: 10px; 
-       float: right; 
-       width: 200px; 
-       height: 100px;
-       box-shadow: 7px 13px 37px #157029;
-}
-.section{
-	height: 35%;
-	width: 100%; 
-    margin: 2% auto;
-    font-size: 27px;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    text-shadow: black 0.1em 0.1em 0.2em
 
+.body {
+  font-family: Arial;
+  background-color: #91c470;
+  width: auto;
+  height: auto;
+  margin: 0.5em auto;
+}
+
+.form-login {
+  width: 35%;
+  height: 50%;
+  background: #479D36;
+  margin: auto;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 4px solid #91c470;
+  color: white;
+  border-radius: 10px;
+}
+
+.form-login h5 {
+  margin: 0px;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: arial;
+  color: white;
+}
+
+.sistema {
+  height: 35%;
+  width: 100%;
+  margin: 3% auto;
+  font-size: 40px;
+  color: green;
+  font-family: Brush Script MT;
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.section {
+  height: 35%;
+  width: 100%;
+  margin: 2% auto;
+  font-size: 27px;
+  color: black;
+  font-family: Arial;
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.logo {
+  margin: 10px;
+  float: left;
+  width: 200px;
+  height: 100px;
+  box-shadow: 7px 13px 37px #157029;
+}
+
+.tec {
+  margin: 10px;
+  float: right;
+  width: 200px;
+  height: 100px;
+  box-shadow: 7px 13px 37px #157029;
+}
+
+.text {
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.controls {
+  width: 90%;
+  border: 1px;
+  font-family: Arial;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2% auto;
+  font-family: Arial;
+  text-align: center;
+}
+
+.olvidaste {
+  height: 35%;
+  width: 100%;
+  margin: 2% auto;
+  font-size: 15px;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  text-shadow: black
+}
+
+.nav-item {
+  margin: 2% auto;
+  text-align: right;
+}
+
+#opciones {
+  width: 500px;
+  height: auto;
+  border-radius: 2em;
+  margin: 5% auto;
+  border-style: dotted;
+  border-color: #479D36;
+  background: #479D36;
+  margin-bottom: 30px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.arti {
+  width: auto;
+  height: auto;
+  background: white;
+  border-radius: 2em;
+  margin: 2em;
+  text-align: center;
+  line-height: 400%;
+  margin-bottom: 5px;
+  font-family: Calibri;
+}
+
+.libros {
+  margin: 110px;
+  float: right;
+  width: 90px;
+  height: 90px;
+  border-radius: 75px;
+  box-shadow: 7px 13px 37px #157029;
 }
