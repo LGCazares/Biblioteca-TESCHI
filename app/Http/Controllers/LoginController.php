@@ -15,11 +15,17 @@ class LoginController extends Controller
 
     public function Login(Request $request)
     {
-        return $request;
 
-        $this->validate(request(), [
-            'email' =>'email|required|string',
-            'password' => 'required|string'
-        ]);
+
+        $arrayValidation = [];
+        $mensajes = [];
+        $arrayValidation['email'] = 'required';
+        $mensajes['email.required'] = 'El correo es obligatorio';
+
+
+        $validation = request()->validate($arrayValidation, $mensajes);
+
+
+
     }
 }

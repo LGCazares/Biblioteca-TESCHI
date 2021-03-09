@@ -11,7 +11,7 @@
 
 .body {
   font-family: Arial;
-  background-color: #b2c7a4;
+  background-color: #91c470;
   width: auto;
   height: auto;
   margin: 0.5em auto;
@@ -54,10 +54,9 @@
   height: 35%;
   width: 100%;
   margin: 2% auto;
-  font-size: 150%;
+  font-size: 27px;
   color: black;
-  font-family: sans-serif;
-  font-style: italic;
+  font-family: Arial;
   text-align: center;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -89,7 +88,7 @@
   width: 90%;
   border: 1px;
   font-family: Arial;
-  margin-bottom: 55px;
+  margin-bottom: 12px;
   padding: 5px 10px;
   font-size: 14px;
   font-weight: bold;
@@ -159,6 +158,13 @@
   height: 90px;
   border-radius: 75px;
   box-shadow: 7px 13px 37px #157029;
+}
+
+.error_form {
+  color: red;
+  font-weight: medium;
+  font-style: italic;
+  font-size: 13px;
 }
 
 .grassy-green {

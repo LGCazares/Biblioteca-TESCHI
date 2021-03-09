@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+@if (session('status'))
+<div class="alert alert-success mt-2" role="alert">
+    {{ session('status') }}
+</div>
+@endif
 <div class="container">
     <div class="row justify-content-center my-5">
         <div class="col-lg-6 text-center">
@@ -15,14 +20,14 @@
                 {!! $errors->first('nombre','<span class="error_form">:message <br></span>') !!}
             </div>
             <div class="form-group col-lg-4">
-                <label for="ap_paterno">Apellido paterno:</label>
-                <input class="form-control" type="text" placeholder="Apellido paterno" value="{{old('ap_paterno')}}" name="ap_paterno">
-                {!! $errors->first('ap_paterno','<span class="error_form">:message</span>') !!}
+                <label for="primer_apellido">Apellido paterno:</label>
+                <input class="form-control" type="text" placeholder="Apellido paterno" value="{{old('primer_apellido')}}" name="primer_apellido">
+                {!! $errors->first('primer_apellido','<span class="error_form">:message</span>') !!}
             </div>
             <div class="form-group col-lg-4">
-                <label for="ap_materno">Apellido materno:</label>
-                <input class="form-control" type="text" placeholder="Apellido materno" value="{{old('ap_materno')}}" name="ap_materno">
-                {!! $errors->first('ap_materno','<span class="error_form">:message</span>') !!}
+                <label for="segundo_apellido">Apellido materno:</label>
+                <input class="form-control" type="text" placeholder="Apellido materno" value="{{old('segundo_apellido')}}" name="segundo_apellido">
+                {!! $errors->first('segundo_apellido','<span class="error_form">:message</span>') !!}
             </div>
             <div class="form-group col-lg-4">
                 <label for="curp">CURP:</label>
@@ -35,27 +40,27 @@
                 {!! $errors->first('telefono','<span class="error_form">:message</span>') !!}
             </div>
             <div class="form-group col-lg-4">
-                <label for="ap_materno">Celular:</label>
+                <label for="celular">Celular:</label>
                 <input class="form-control" type="tel" placeholder="Celular" value="{{old('celular')}}" name="celular">
                 {!! $errors->first('celular','<span class="error_form">:message</span>') !!}
             </div>
             <div class="form-group col-lg-4">
-                <label for="nombre">Correo Electronico </label>
-                <input class="form-control" type="text" placeholder="Correo Electronico" value="{{old('correo')}}" name="correo">
-                {!! $errors->first('correo','<span class="error_form">:message <br></span>') !!}
+                <label for="email">Correo Electronico </label>
+                <input class="form-control" type="email" placeholder="Correo Electronico" value="{{old('email')}}" name="email">
+                {!! $errors->first('email','<span class="error_form">:message <br></span>') !!}
             </div>
         </div>
         <div style="border-top: solid 2px #91C470;" ></div>
         <div class="row mt-3" >
             <div class="form-group col-lg-4">
-                <label for="nombre">Ingresa una contraseña </label>
-                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="contraseña" maxlength="20">
-                {!! $errors->first('contraseña','<span class="error_form">:message <br></span>') !!}
+                <label for="password">Ingresa una contraseña </label>
+                <input class="form-control" type="password" placeholder="Contraseña" value="" name="password" maxlength="20">
+                {!! $errors->first('password','<span class="error_form">:message <br></span>') !!}
             </div>
             <div class="form-group ¿ col-lg-4">
-                <label for="nombre">Confirma tu contraseña </label>
-                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="contraseña" maxlength="20">
-                {!! $errors->first('contraseña','<span class="error_form">:message <br></span>') !!}
+                <label for="password_confirmation">Confirma tu contraseña </label>
+                <input class="form-control" type="password" placeholder="Contraseña" value="" name="password_confirmation" maxlength="20">
+                {!! $errors->first('password_confirmation','<span class="error_form">:message <br></span>') !!}
             </div>
         </div>
         <div class="d-flex justify-content-end col-12">

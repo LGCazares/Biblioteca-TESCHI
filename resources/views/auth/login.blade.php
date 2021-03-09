@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+@if (session('status'))
+<div class="alert alert-success mt-2" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+<div class=" container row">
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -9,17 +14,15 @@
             <div class="panel-body">
                 <form method="POST" action="{{route('store.login')}}">
                     @csrf
-                    <div class="form-group">
-                        <label for="email"> Correo Electronico</label>
-                        <input class="form-control" 
-                        type="email" name="email" 
-                        placeholder="Ingresa tu correo electronico">
+                    <div class="form-group col-lg-4">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" type="text" placeholder="Nombre" value="{{old('nombre')}}" name="nombre">
+                        {!! $errors->first('nombre','<span class="error_form">:message <br></span>') !!}
                     </div>
-                    <div class="form-group">
-                        <label for="password"> Contraseña</label>
-                        <input class="form-control" 
-                        type="password" name="password" 
-                        placeholder="Ingresa tu contraseña">
+                    <div class="form-group col-lg-4">
+                        <label for="primer_apellido">Apellido paterno:</label>
+                        <input class="form-control" type="text" placeholder="Apellido paterno" value="{{old('primer_apellido')}}" name="primer_apellido">
+                        {!! $errors->first('primer_apellido','<span class="error_form">:message</span>') !!}
                     </div>
                     <button type="submit" class="btn btn-primary btn-block"> Ingresar </button>
                 </form>
