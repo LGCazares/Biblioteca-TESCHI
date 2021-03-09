@@ -11,4 +11,12 @@ class LibrosController extends Controller
         $libros = ListasLibro::all();
         return view('libros.lista_libros', compact('libros'));
     }
+
+    public function showPrestamos ()
+    {
+
+        return view('libros.prestamo_libros');
+    }
+    
 }
+

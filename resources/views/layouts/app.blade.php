@@ -18,7 +18,9 @@
 
     <div style="margin-bottom: 5.5rem;" class="container mt-5">
         @yield('content')
+        
     </div>
-    @include('layouts._footer')
+    
 </body>
+
 </html>

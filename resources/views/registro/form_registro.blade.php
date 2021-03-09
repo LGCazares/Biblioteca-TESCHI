@@ -25,9 +25,9 @@
                 {!! $errors->first('ap_materno','<span class="error_form">:message</span>') !!}
             </div>
             <div class="form-group col-lg-4">
-                <label for="nombre">CURP:</label>
-                <input class="form-control" type="text" placeholder="CURP" value="{{old('curp')}}" name="curp">
-                {!! $errors->first('nombre','<span class="error_form">:message <br></span>') !!}
+                <label for="curp">CURP:</label>
+                <input class="form-control rfc-curp" type="text" placeholder="curp" value="{{old('curp')}}" name="curp" maxlength="18">
+                {!! $errors->first('curp','<span class="error_form">:message <br></span>') !!}
             </div>
             <div class="form-group col-lg-4">
                 <label for="telefono">Telefono:</label>
@@ -49,13 +49,13 @@
         <div class="row mt-3" >
             <div class="form-group col-lg-4">
                 <label for="nombre">Ingresa una contraseña </label>
-                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="correo" maxlength="20">
-                {!! $errors->first('correo','<span class="error_form">:message <br></span>') !!}
+                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="contraseña" maxlength="20">
+                {!! $errors->first('contraseña','<span class="error_form">:message <br></span>') !!}
             </div>
             <div class="form-group ¿ col-lg-4">
                 <label for="nombre">Confirma tu contraseña </label>
-                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="correo" maxlength="20">
-                {!! $errors->first('correo','<span class="error_form">:message <br></span>') !!}
+                <input class="form-control" type="password" placeholder="Contraseña" value="{{old('correo')}}" name="contraseña" maxlength="20">
+                {!! $errors->first('contraseña','<span class="error_form">:message <br></span>') !!}
             </div>
         </div>
         <div class="d-flex justify-content-end col-12">
@@ -63,6 +63,5 @@
         </div>
     </form>
 </div>
-
-
+@include('layouts._footer')
 @endsection

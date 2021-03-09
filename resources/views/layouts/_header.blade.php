@@ -7,7 +7,7 @@
             {{auth()->user()->email}}
             @endauth
             @guest
-            <a style="color: white" href="">Iniciar sesion</a>
+            <a style="color: white" href="{{route('login')}}">Iniciar sesion</a>
             <a style="color: white" href="{{route('registrate')}}">Registrate</a>
             @else
             <li>
@@ -27,3 +27,4 @@
 
 
 <section class="sistema"> Sistema de Biblioteca Escolar </section>
+
