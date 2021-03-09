@@ -21,9 +21,16 @@ class LoginController extends Controller
         $mensajes = [];
         $arrayValidation['email'] = 'required';
         $mensajes['email.required'] = 'El correo es obligatorio';
+         $arrayValidation['password'] = 'required|string|min:8|';
+        $mensajes['password.required'] = 'La contraseña  es obligatoria';
 
 
+
+        return redirect()->route('home')->with('status', 'hola.'); 
+        
         $validation = request()->validate($arrayValidation, $mensajes);
+
+
 
 
 
