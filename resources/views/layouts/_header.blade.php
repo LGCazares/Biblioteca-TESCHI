@@ -22,9 +22,9 @@
     TECNOLÓGICO DE ESTUDIOS SUPERIORES DE CHIMALHUACÁN
     <img class="logo" src="{{asset('imagen/teschi_logo.png')}}" alt="imagen 1">
     <img class="tec" src="{{asset('imagen/tecnm.png')}}" alt="imagen 2">
-
+    <section class="sistema"> Sistema de Biblioteca Escolar </section>
 </section>
 
 
-<section class="sistema"> Sistema de Biblioteca Escolar </section>
+
 

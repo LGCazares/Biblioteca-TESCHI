@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 .div_verde {
   border-radius: 20px;
-  background-color: #91C470;
+  background-color: #839775;
   color: white;
   font-size: 24px;
   display: flex;
@@ -11,7 +11,7 @@
 
 .body {
   font-family: Arial;
-  background-color: #91c470;
+  background-color: black;
   width: auto;
   height: auto;
   margin: 0.5em auto;
@@ -42,23 +42,29 @@
 .sistema {
   height: 35%;
   width: 100%;
-  margin: 3% auto;
+  margin: 1% auto;
   font-size: 40px;
-  color: green;
+  color: white;
   font-family: Brush Script MT;
   text-align: center;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: green 0.1em 0.1em 0.2em;
 }
 
+.credencial {
+  width: 250px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #428bca;
+}
 .section {
   height: 35%;
   width: 100%;
   margin: 2% auto;
   font-size: 27px;
-  color: black;
+  color: white;
   font-family: Arial;
   text-align: center;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: green 0.1em 0.1em 0.2em;
 }
 
 .logo {
@@ -161,10 +167,10 @@
 }
 
 .error_form {
-  color: red;
-  font-weight: medium;
+  color: white;
+  font-weight: bold;
   font-style: italic;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .grassy-green {

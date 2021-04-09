@@ -61,4 +61,6 @@ class RegistroController extends Controller
 
         return redirect()->route('login')->with('status', 'Registro guardado exitosamente.');
     }
+  
+    
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\AdministradorController;
 use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PDFController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('imprimir', [PDFController::class, 'imprimirpdf'])->name('imprimir.pdf');
 
 Route::get('/', [HomeController::class, 'index'])->name('/');
 Route::get('home',[HomeController::class, 'showHome'])->name('home');
@@ -36,5 +39,6 @@ Route::get('prestamo/libros', [LibrosController::class, 'showPrestamos'])->name(
 Route::get('info/alumno', [AlumnoController::class, 'showInfo'])->name('info.alumno');
 Route::get('nuevo/alumno', [AdministradorController::class, 'storeAlumno'])->name('store.alumno');
 Route::post('nuevo_alumno', [AdministradorController::class, 'createAlumno'])->name('create.alumno');
+Route::get('direccion/alumno', [AdministradorController::class, 'direccionAlumno'])->name('direccion.alumno');
 
 

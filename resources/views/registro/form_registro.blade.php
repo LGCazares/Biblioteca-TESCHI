@@ -5,8 +5,9 @@
     {{ session('status') }}
 </div>
 @endif
-<div class="container">
-    <div class="row justify-content-center my-5">
+<div class="container " style="background:linear-gradient(30deg,rgb(0, 0, 0), rgb(13, 80, 35),rgb(53, 114, 91), rgb(12, 165, 81), rgb(152, 240, 160), rgb(179, 253, 219))" class="navbar navbar-expand-lg navbar-light" class="bg-warning rounded">
+   
+    <div class="row justify-content-center my-5" >
         <div class="col-lg-6 text-center">
             <h2 class="fs-22 fw-bold pine-green">Registrate</h2>
         </div>
@@ -68,5 +69,4 @@
         </div>
     </form>
 </div>
-@include('layouts._footer')
 @endsection

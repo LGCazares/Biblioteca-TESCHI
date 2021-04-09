@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container">
+<div class="container "  style="background:linear-gradient(30deg,rgb(53, 114, 91), rgb(12, 165, 81), rgb(152, 240, 160), rgb(179, 253, 219))" class="navbar navbar-expand-lg navbar-light" class="bg-warning rounded">
     <div class="table-responsive mb-5">
         <table class="table" id="libros_table">
-            <thead class="thead-dark">
+            <thead class="table table-hover">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Autor</th>
